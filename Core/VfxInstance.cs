@@ -73,14 +73,5 @@ namespace VfxSystem
             // Return to pool. (Note: gameObject.SetActive(false) is handled by ObjectPool)
             _pool.Release(this);
         }
-
-        /// <summary>
-        /// Implements IDisposable.
-        /// Allows usage: using (var vfx = VfxManager.PlayLoop(...)) { ... }
-        /// </summary>
-        public void Dispose()
-        {
-            Release();
-        }
     }
 }

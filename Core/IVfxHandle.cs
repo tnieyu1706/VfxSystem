@@ -6,7 +6,7 @@ namespace VfxSystem
     /// Interface representing a playing VFX.
     /// Inherits from IDisposable to support 'using' statement or manual cleanup.
     /// </summary>
-    public interface IVfxHandle : IDisposable
+    public interface IVfxHandle
     {
         /// <summary>
         /// Returns this VFX to the Pool. 
